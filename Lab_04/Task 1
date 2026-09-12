@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main() {
+	int num1, num2, num3;
+	
+	printf("Enter the three numbers separated by space:- ");
+	scanf("%d %d %d", &num1, &num2, &num3);
+	
+	if (num1 == num2 && num3==num2) {
+		printf("All numbers are equal.The greatest number is %d\n", num1);
+}	else if (num1 == num2 && num1>num3) {
+	printf("The first and the second numbers are equal. The greatest number is %d\n", num2);
+}	else if (num1 == num3 && num1>num2) {
+	printf("The first and third numbers are equal and the greatest is: %d", num1);
+}	
+	else if (num2 == num3 && num2>num1) {
+		printf("The second and third numbers are equal and greatest is: %d", num2);
+}	
+	else if (num1>num2 && num1>num3) {
+		printf("The greatest number is: %d", num1);
+}	else if (num2>num1 && num2>num3){
+	printf("The greatest number is: %d", num2);
+}	else {
+	printf("The greatest number is: %d", num3);
+}
+	return 0;
+	
+	
+	
+}
